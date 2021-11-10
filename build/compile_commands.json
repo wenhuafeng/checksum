@@ -1,0 +1,102 @@
+[
+{
+  "directory": "D:/src/checksum/build",
+  "command": "\"D:\\Program Files\\mingw-w64\\x86_64-8.1.0-win32-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe\"  @CMakeFiles/securec_static.dir/includes_C.rsp -g -o CMakeFiles\\securec_static.dir\\secure\\memset_s.c.obj -c D:\\src\\checksum\\secure\\memset_s.c",
+  "file": "D:/src/checksum/secure/memset_s.c"
+},
+{
+  "directory": "D:/src/checksum/build",
+  "command": "\"D:\\Program Files\\mingw-w64\\x86_64-8.1.0-win32-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe\"  @CMakeFiles/securec_static.dir/includes_C.rsp -g -o CMakeFiles\\securec_static.dir\\secure\\securecutil.c.obj -c D:\\src\\checksum\\secure\\securecutil.c",
+  "file": "D:/src/checksum/secure/securecutil.c"
+},
+{
+  "directory": "D:/src/checksum/build",
+  "command": "\"D:\\Program Files\\mingw-w64\\x86_64-8.1.0-win32-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe\"  @CMakeFiles/securec_static.dir/includes_C.rsp -g -o CMakeFiles\\securec_static.dir\\secure\\secureprintoutput_a.c.obj -c D:\\src\\checksum\\secure\\secureprintoutput_a.c",
+  "file": "D:/src/checksum/secure/secureprintoutput_a.c"
+},
+{
+  "directory": "D:/src/checksum/build",
+  "command": "\"D:\\Program Files\\mingw-w64\\x86_64-8.1.0-win32-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe\"  @CMakeFiles/securec_static.dir/includes_C.rsp -g -o CMakeFiles\\securec_static.dir\\secure\\sprintf_s.c.obj -c D:\\src\\checksum\\secure\\sprintf_s.c",
+  "file": "D:/src/checksum/secure/sprintf_s.c"
+},
+{
+  "directory": "D:/src/checksum/build",
+  "command": "\"D:\\Program Files\\mingw-w64\\x86_64-8.1.0-win32-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe\"  @CMakeFiles/securec_static.dir/includes_C.rsp -g -o CMakeFiles\\securec_static.dir\\secure\\vsnprintf_s.c.obj -c D:\\src\\checksum\\secure\\vsnprintf_s.c",
+  "file": "D:/src/checksum/secure/vsnprintf_s.c"
+},
+{
+  "directory": "D:/src/checksum/build",
+  "command": "\"D:\\Program Files\\mingw-w64\\x86_64-8.1.0-win32-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe\"  @CMakeFiles/securec_static.dir/includes_C.rsp -g -o CMakeFiles\\securec_static.dir\\secure\\vsprintf_s.c.obj -c D:\\src\\checksum\\secure\\vsprintf_s.c",
+  "file": "D:/src/checksum/secure/vsprintf_s.c"
+},
+{
+  "directory": "D:/src/checksum/build",
+  "command": "\"D:\\Program Files\\mingw-w64\\x86_64-8.1.0-win32-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe\" -Dsecurec_shared_EXPORTS @CMakeFiles/securec_shared.dir/includes_C.rsp -g -o CMakeFiles\\securec_shared.dir\\secure\\memset_s.c.obj -c D:\\src\\checksum\\secure\\memset_s.c",
+  "file": "D:/src/checksum/secure/memset_s.c"
+},
+{
+  "directory": "D:/src/checksum/build",
+  "command": "\"D:\\Program Files\\mingw-w64\\x86_64-8.1.0-win32-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe\" -Dsecurec_shared_EXPORTS @CMakeFiles/securec_shared.dir/includes_C.rsp -g -o CMakeFiles\\securec_shared.dir\\secure\\securecutil.c.obj -c D:\\src\\checksum\\secure\\securecutil.c",
+  "file": "D:/src/checksum/secure/securecutil.c"
+},
+{
+  "directory": "D:/src/checksum/build",
+  "command": "\"D:\\Program Files\\mingw-w64\\x86_64-8.1.0-win32-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe\" -Dsecurec_shared_EXPORTS @CMakeFiles/securec_shared.dir/includes_C.rsp -g -o CMakeFiles\\securec_shared.dir\\secure\\secureprintoutput_a.c.obj -c D:\\src\\checksum\\secure\\secureprintoutput_a.c",
+  "file": "D:/src/checksum/secure/secureprintoutput_a.c"
+},
+{
+  "directory": "D:/src/checksum/build",
+  "command": "\"D:\\Program Files\\mingw-w64\\x86_64-8.1.0-win32-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe\" -Dsecurec_shared_EXPORTS @CMakeFiles/securec_shared.dir/includes_C.rsp -g -o CMakeFiles\\securec_shared.dir\\secure\\sprintf_s.c.obj -c D:\\src\\checksum\\secure\\sprintf_s.c",
+  "file": "D:/src/checksum/secure/sprintf_s.c"
+},
+{
+  "directory": "D:/src/checksum/build",
+  "command": "\"D:\\Program Files\\mingw-w64\\x86_64-8.1.0-win32-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe\" -Dsecurec_shared_EXPORTS @CMakeFiles/securec_shared.dir/includes_C.rsp -g -o CMakeFiles\\securec_shared.dir\\secure\\vsnprintf_s.c.obj -c D:\\src\\checksum\\secure\\vsnprintf_s.c",
+  "file": "D:/src/checksum/secure/vsnprintf_s.c"
+},
+{
+  "directory": "D:/src/checksum/build",
+  "command": "\"D:\\Program Files\\mingw-w64\\x86_64-8.1.0-win32-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe\" -Dsecurec_shared_EXPORTS @CMakeFiles/securec_shared.dir/includes_C.rsp -g -o CMakeFiles\\securec_shared.dir\\secure\\vsprintf_s.c.obj -c D:\\src\\checksum\\secure\\vsprintf_s.c",
+  "file": "D:/src/checksum/secure/vsprintf_s.c"
+},
+{
+  "directory": "D:/src/checksum/build",
+  "command": "\"D:\\Program Files\\mingw-w64\\x86_64-8.1.0-win32-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe\"  @CMakeFiles/checksum.dir/includes_C.rsp -g -o CMakeFiles\\checksum.dir\\src\\checksum.c.obj -c D:\\src\\checksum\\src\\checksum.c",
+  "file": "D:/src/checksum/src/checksum.c"
+},
+{
+  "directory": "D:/src/checksum/build",
+  "command": "\"D:\\Program Files\\mingw-w64\\x86_64-8.1.0-win32-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe\"  @CMakeFiles/checksum.dir/includes_C.rsp -g -o CMakeFiles\\checksum.dir\\log\\log.c.obj -c D:\\src\\checksum\\log\\log.c",
+  "file": "D:/src/checksum/log/log.c"
+},
+{
+  "directory": "D:/src/checksum/build",
+  "command": "\"D:\\Program Files\\mingw-w64\\x86_64-8.1.0-win32-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe\"  @CMakeFiles/checksum.dir/includes_C.rsp -g -o CMakeFiles\\checksum.dir\\hash256\\hash_out.c.obj -c D:\\src\\checksum\\hash256\\hash_out.c",
+  "file": "D:/src/checksum/hash256/hash_out.c"
+},
+{
+  "directory": "D:/src/checksum/build",
+  "command": "\"D:\\Program Files\\mingw-w64\\x86_64-8.1.0-win32-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe\"  @CMakeFiles/checksum.dir/includes_C.rsp -g -o CMakeFiles\\checksum.dir\\hash256\\sha256.c.obj -c D:\\src\\checksum\\hash256\\sha256.c",
+  "file": "D:/src/checksum/hash256/sha256.c"
+},
+{
+  "directory": "D:/src/checksum/build",
+  "command": "\"D:\\Program Files\\mingw-w64\\x86_64-8.1.0-win32-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe\"  @CMakeFiles/checksum.dir/includes_C.rsp -g -o CMakeFiles\\checksum.dir\\crc32\\crc32.c.obj -c D:\\src\\checksum\\crc32\\crc32.c",
+  "file": "D:/src/checksum/crc32/crc32.c"
+},
+{
+  "directory": "D:/src/checksum/build",
+  "command": "\"D:\\Program Files\\mingw-w64\\x86_64-8.1.0-win32-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe\"  @CMakeFiles/checksum.dir/includes_C.rsp -g -o CMakeFiles\\checksum.dir\\crc32\\crc_out.c.obj -c D:\\src\\checksum\\crc32\\crc_out.c",
+  "file": "D:/src/checksum/crc32/crc_out.c"
+},
+{
+  "directory": "D:/src/checksum/build",
+  "command": "\"D:\\Program Files\\mingw-w64\\x86_64-8.1.0-win32-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe\"  @CMakeFiles/checksum.dir/includes_C.rsp -g -o CMakeFiles\\checksum.dir\\checksum\\checksum_32.c.obj -c D:\\src\\checksum\\checksum\\checksum_32.c",
+  "file": "D:/src/checksum/checksum/checksum_32.c"
+},
+{
+  "directory": "D:/src/checksum/build",
+  "command": "\"D:\\Program Files\\mingw-w64\\x86_64-8.1.0-win32-seh-rt_v6-rev0\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe\"  @CMakeFiles/checksum.dir/includes_C.rsp -g -o CMakeFiles\\checksum.dir\\checksum\\checksum_out.c.obj -c D:\\src\\checksum\\checksum\\checksum_out.c",
+  "file": "D:/src/checksum/checksum/checksum_out.c"
+}
+]
