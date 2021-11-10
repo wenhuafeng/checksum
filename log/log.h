@@ -3,7 +3,7 @@
 
 #include <stdbool.h>
 
-#define LOG_TAG "FileMerge"
+#define LOG_TAG "checksum"
 
 enum LogLevel {
     LOG_LEVEL_OFF,

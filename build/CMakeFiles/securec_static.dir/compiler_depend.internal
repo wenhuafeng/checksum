@@ -3,10 +3,9 @@
 
 CMakeFiles/securec_static.dir/secure/memset_s.c.obj
  D:/src/checksum/secure/memset_s.c
- C:/Users/wenhuafeng/Desktop/LR1730/mark/secure/memset_s.c
- C:/Users/wenhuafeng/Desktop/LR1730/mark/secure/securecutil.h
- C:/Users/wenhuafeng/Desktop/LR1730/mark/secure/securec.h
- C:/Users/wenhuafeng/Desktop/LR1730/mark/secure/securectype.h
+ D:/src/checksum/secure/securecutil.h
+ D:/src/checksum/secure/securec.h
+ D:/src/checksum/secure/securectype.h
  D:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h
  D:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/crtdefs.h
  D:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw.h
@@ -35,10 +34,9 @@ CMakeFiles/securec_static.dir/secure/memset_s.c.obj
 
 CMakeFiles/securec_static.dir/secure/securecutil.c.obj
  D:/src/checksum/secure/securecutil.c
- C:/Users/wenhuafeng/Desktop/LR1730/mark/secure/securecutil.c
- C:/Users/wenhuafeng/Desktop/LR1730/mark/secure/securecutil.h
- C:/Users/wenhuafeng/Desktop/LR1730/mark/secure/securec.h
- C:/Users/wenhuafeng/Desktop/LR1730/mark/secure/securectype.h
+ D:/src/checksum/secure/securecutil.h
+ D:/src/checksum/secure/securec.h
+ D:/src/checksum/secure/securectype.h
  D:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h
  D:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/crtdefs.h
  D:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw.h
@@ -67,11 +65,10 @@ CMakeFiles/securec_static.dir/secure/securecutil.c.obj
 
 CMakeFiles/securec_static.dir/secure/secureprintoutput_a.c.obj
  D:/src/checksum/secure/secureprintoutput_a.c
- C:/Users/wenhuafeng/Desktop/LR1730/mark/secure/secureprintoutput_a.c
- C:/Users/wenhuafeng/Desktop/LR1730/mark/secure/secureprintoutput.h
- C:/Users/wenhuafeng/Desktop/LR1730/mark/secure/securecutil.h
- C:/Users/wenhuafeng/Desktop/LR1730/mark/secure/securec.h
- C:/Users/wenhuafeng/Desktop/LR1730/mark/secure/securectype.h
+ D:/src/checksum/secure/secureprintoutput.h
+ D:/src/checksum/secure/securecutil.h
+ D:/src/checksum/secure/securec.h
+ D:/src/checksum/secure/securectype.h
  D:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h
  D:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/crtdefs.h
  D:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw.h
@@ -97,13 +94,12 @@ CMakeFiles/securec_static.dir/secure/secureprintoutput_a.c.obj
  D:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdarg.h
  D:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h
  D:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/errno.h
- C:/Users/wenhuafeng/Desktop/LR1730/mark/secure/output.inl
+ D:/src/checksum/secure/output.inl
 
 CMakeFiles/securec_static.dir/secure/sprintf_s.c.obj
  D:/src/checksum/secure/sprintf_s.c
- C:/Users/wenhuafeng/Desktop/LR1730/mark/secure/sprintf_s.c
- C:/Users/wenhuafeng/Desktop/LR1730/mark/secure/securec.h
- C:/Users/wenhuafeng/Desktop/LR1730/mark/secure/securectype.h
+ D:/src/checksum/secure/securec.h
+ D:/src/checksum/secure/securectype.h
  D:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h
  D:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/crtdefs.h
  D:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw.h
@@ -132,11 +128,10 @@ CMakeFiles/securec_static.dir/secure/sprintf_s.c.obj
 
 CMakeFiles/securec_static.dir/secure/vsnprintf_s.c.obj
  D:/src/checksum/secure/vsnprintf_s.c
- C:/Users/wenhuafeng/Desktop/LR1730/mark/secure/vsnprintf_s.c
- C:/Users/wenhuafeng/Desktop/LR1730/mark/secure/secureprintoutput.h
- C:/Users/wenhuafeng/Desktop/LR1730/mark/secure/securecutil.h
- C:/Users/wenhuafeng/Desktop/LR1730/mark/secure/securec.h
- C:/Users/wenhuafeng/Desktop/LR1730/mark/secure/securectype.h
+ D:/src/checksum/secure/secureprintoutput.h
+ D:/src/checksum/secure/securecutil.h
+ D:/src/checksum/secure/securec.h
+ D:/src/checksum/secure/securectype.h
  D:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h
  D:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/crtdefs.h
  D:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw.h
@@ -165,11 +160,10 @@ CMakeFiles/securec_static.dir/secure/vsnprintf_s.c.obj
 
 CMakeFiles/securec_static.dir/secure/vsprintf_s.c.obj
  D:/src/checksum/secure/vsprintf_s.c
- C:/Users/wenhuafeng/Desktop/LR1730/mark/secure/vsprintf_s.c
- C:/Users/wenhuafeng/Desktop/LR1730/mark/secure/secureprintoutput.h
- C:/Users/wenhuafeng/Desktop/LR1730/mark/secure/securecutil.h
- C:/Users/wenhuafeng/Desktop/LR1730/mark/secure/securec.h
- C:/Users/wenhuafeng/Desktop/LR1730/mark/secure/securectype.h
+ D:/src/checksum/secure/secureprintoutput.h
+ D:/src/checksum/secure/securecutil.h
+ D:/src/checksum/secure/securec.h
+ D:/src/checksum/secure/securectype.h
  D:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h
  D:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/crtdefs.h
  D:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw.h

@@ -17,7 +17,7 @@ void PrintVersionInfo(void)
     LOGI("%s %s %s\n", SOFTWARE_VERSION, __DATE__, __TIME__);
 }
 
-static bool ReadDtmBin(char *fileName, uint8_t **buffer, size_t *len)
+static bool ReadFile(char *fileName, uint8_t **buffer, size_t *len)
 {
     FILE *fp = NULL;
     //const char *fileName = FN_DTM_BIN;
@@ -80,10 +80,11 @@ int main(int argc, char *argv[])
     size_t length = 0;
     uint8_t *fileData = NULL;
 
-    //printf("argc:%d\n", argc);
-    //for (i = 0; i < argc; i++) {
-    //    printf("argv[%d]:%s\n", i, argv[i]);
-    //}
+    printf("argc:%d\n", argc);
+    for (i = 0; i < argc; i++) {
+        printf("argv[%d]:%s\n", i, argv[i]);
+    }
+
     ret = LogInit(LOG_LEVEL_ALL, 0);
     if (ret == EXIT_FAILURE) {
         printf("log init error!\n");
@@ -91,7 +92,7 @@ int main(int argc, char *argv[])
 
     PrintVersionInfo();
 
-    ret = ReadDtmBin(argv[1], &fileData, &length);
+    ret = ReadFile(argv[1], &fileData, &length);
     if (ret != EXIT_SUCCESS) {
         free(fileData);
         fileData = NULL;
@@ -109,7 +110,7 @@ int main(int argc, char *argv[])
     free(fileData);
 
     LogDeInit();
-
     system("PAUSE");
+
     return EXIT_SUCCESS;
 }
