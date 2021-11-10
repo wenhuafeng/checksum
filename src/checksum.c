@@ -20,7 +20,6 @@ void PrintVersionInfo(void)
 static bool ReadFile(char *fileName, uint8_t **buffer, size_t *len)
 {
     FILE *fp = NULL;
-    //const char *fileName = FN_DTM_BIN;
     size_t ret;
     size_t fileSize;
     bool status = EXIT_FAILURE;

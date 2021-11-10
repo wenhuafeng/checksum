@@ -1,3 +1,3 @@
-[Time]2021-11-10 20:05:15 : Info:  [FileMerge] v1.0.1 Nov 10 2021 20:05:07
-[Time]2021-11-10 20:05:15 : Info:  [FileMerge] fseek file: C:\Users\wenhuafeng\Desktop\LR1730\Output\LR1730.hex fileSize: 85971
-[Time]2021-11-10 20:05:15 : Info:  [FileMerge] read file: C:\Users\wenhuafeng\Desktop\LR1730\Output\LR1730.hex length: 85971
+[Time]2021-11-10 20:25:33 : Info:  [checksum] v1.0.1 Nov 10 2021 20:24:46
+[Time]2021-11-10 20:25:33 : Info:  [checksum] fseek file: C:\Users\wenhuafeng\Desktop\LR1730\Output\LR1730.hex fileSize: 85971
+[Time]2021-11-10 20:25:33 : Info:  [checksum] read file: C:\Users\wenhuafeng\Desktop\LR1730\Output\LR1730.hex length: 85971
