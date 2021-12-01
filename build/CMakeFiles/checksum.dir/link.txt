@@ -1,3 +1,0 @@
-"D:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\checksum.dir/objects.a
-"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ar.exe" cr CMakeFiles\checksum.dir/objects.a @CMakeFiles\checksum.dir\objects1.rsp
-"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\x86_64-w64-mingw32-gcc.exe" -g -Wl,--whole-archive CMakeFiles\checksum.dir/objects.a -Wl,--no-whole-archive -o checksum.exe -Wl,--out-implib,libchecksum.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\checksum.dir\linklibs.rsp
