@@ -19,14 +19,14 @@ int main(int argc, char *argv[])
     uint8_t i;
     bool ret;
 
-    printf("argc:%d\n", argc);
-    for (i = 0; i < argc; i++) {
-        printf("argv[%d]:%s\n", i, argv[i]);
-    }
-
     ret = LogInit(LOG_LEVEL_ALL, 0);
     if (ret == EXIT_FAILURE) {
         printf("log init error!\n");
+    }
+
+    LOGI("argc:%d\n", argc);
+    for (i = 0; i < argc; i++) {
+        LOGI("argv[%d]:%s\n", i, argv[i]);
     }
 
     PrintVersionInfo();

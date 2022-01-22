@@ -5,7 +5,7 @@
 #include <string.h>
 #include <stdbool.h>
 #include "log.h"
-#include "hash_out.h"
+#include "sha256_out.h"
 #include "checksum_out.h"
 #include "crc32_out.h"
 #include "crc16_ccitt_false_out.h"
@@ -81,6 +81,7 @@ void CommonFunc(int argc, char *argv[])
 {
     bool ret;
     uint8_t i;
+    uint8_t tableLength;
     size_t length = 0;
     uint8_t *fileData = NULL;
 
@@ -91,10 +92,17 @@ void CommonFunc(int argc, char *argv[])
         return;
     }
 
-    for (i = 0; i < sizeof(g_cmdTable) / sizeof(g_cmdTable[0]); i++) {
-        if (strcmp(g_cmdTable[i].cmd, argv[2]) == 0) {
+    tableLength = sizeof(g_cmdTable) / sizeof(g_cmdTable[0]);
+    if (strcmp("ALL", argv[2]) == 0) {
+        for (i = 0; i < tableLength; i++) {
             g_cmdTable[i].handler(fileData, length);
-            break;
+        }
+    } else {
+        for (i = 0; i < tableLength; i++) {
+            if (strcmp(g_cmdTable[i].cmd, argv[2]) == 0) {
+                g_cmdTable[i].handler(fileData, length);
+                break;
+            }
         }
     }
 
