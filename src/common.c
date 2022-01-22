@@ -10,6 +10,12 @@
 #include "crc32_out.h"
 #include "crc16_ccitt_false_out.h"
 
+typedef void (*CmdHandler)(uint8_t *data, size_t len);
+typedef struct {
+    char *cmd;
+    CmdHandler handler;
+} CmdHandlerType;
+
 static bool ReadFile(char *fileName, uint8_t **buffer, size_t *len)
 {
     FILE *fp = NULL;
@@ -64,9 +70,17 @@ quit_program:
     return status;
 }
 
+static const CmdHandlerType g_cmdTable[] = {
+    { "CHECKSUM", CHECKSUM_Out },
+    { "CRC16", CRC16_CcittFalseOut },
+    { "CRC32", CRC32_Out },
+    { "SHA256", SHA256_Out },
+};
+
 void CommonFunc(int argc, char *argv[])
 {
     bool ret;
+    uint8_t i;
     size_t length = 0;
     uint8_t *fileData = NULL;
 
@@ -76,16 +90,13 @@ void CommonFunc(int argc, char *argv[])
         fileData = NULL;
         return;
     }
-    if (strcmp("CHECKSUM", argv[2]) == 0) {
-        CHECKSUM_Out(fileData, length);
-    } else if (strcmp("CRC16", argv[2]) == 0) {
-        CRC16_CcittFalseOut(fileData, length);
-    } else if (strcmp("CRC32", argv[2]) == 0) {
-        CRC32_Out(fileData, length);
-    } else if (strcmp("SHA256", argv[2]) == 0) {
-        SHA256_Out(fileData, length);
-    } else {
-        ;
+
+    for (i = 0; i < sizeof(g_cmdTable) / sizeof(g_cmdTable[0]); i++) {
+        if (strcmp(g_cmdTable[i].cmd, argv[2]) == 0) {
+            g_cmdTable[i].handler(fileData, length);
+            break;
+        }
     }
+
     free(fileData);
 }
