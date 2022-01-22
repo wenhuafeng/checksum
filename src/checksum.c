@@ -5,7 +5,8 @@
 #include "log.h"
 #include "hash_out.h"
 #include "checksum_out.h"
-#include "crc_out.h"
+#include "crc32_out.h"
+#include "crc16_ccitt_false_out.h"
 
 #define SOFTWARE_VERSION        "v1.0.1"
 #define SOFTWARE_VERSION_LEN    (sizeof(__DATE__) + \
@@ -98,18 +99,20 @@ int main(int argc, char *argv[])
         return EXIT_FAILURE;
     }
     if (strcmp("CHECKSUM", argv[2]) == 0) {
-        ChecksumOut(fileData, length);
+        CHECKSUM_Out(fileData, length);
+    } else if (strcmp("CRC16", argv[2]) == 0) {
+        CRC16_CcittFalseOut(fileData, length);
     } else if (strcmp("CRC32", argv[2]) == 0) {
-        CrcOut(fileData, length);
+        CRC32_Out(fileData, length);
     } else if (strcmp("SHA256", argv[2]) == 0) {
-        Hash256Out(fileData, length);
+        SHA256_Out(fileData, length);
     } else {
         ;
     }
     free(fileData);
 
     LogDeInit();
-    system("PAUSE");
+    //system("PAUSE");
 
     return EXIT_SUCCESS;
 }

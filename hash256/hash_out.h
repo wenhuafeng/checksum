@@ -3,6 +3,6 @@
 
 #include <stdint.h>
 
-void Hash256Out(uint8_t *data, size_t len);
+void SHA256_Out(uint8_t *data, size_t len);
 
 #endif

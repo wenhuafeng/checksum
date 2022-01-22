@@ -4,7 +4,7 @@
 
 #define SHA256_BYTE_LEN 32
 
-void Hash256Out(uint8_t *data, size_t len)
+void SHA256_Out(uint8_t *data, size_t len)
 {
     uint8_t i;
     uint8_t out[SHA256_BYTE_LEN] = {0};

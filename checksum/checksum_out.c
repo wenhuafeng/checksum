@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "checksum_32.h"
 
-void ChecksumOut(uint8_t *data, size_t len)
+void CHECKSUM_Out(uint8_t *data, size_t len)
 {
     uint32_t out;
 

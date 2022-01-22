@@ -1,0 +1,3 @@
+[Time]2022-01-22 10:19:01 : Info:  [checksum] v1.0.1 Jan 22 2022 10:18:50
+[Time]2022-01-22 10:19:01 : Info:  [checksum] fseek file: WSA319.hex fileSize: 90489
+[Time]2022-01-22 10:19:01 : Info:  [checksum] read file: WSA319.hex length: 90489

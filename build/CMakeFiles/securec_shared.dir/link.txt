@@ -1,3 +1,0 @@
-"D:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\securec_shared.dir/objects.a
-"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\ar.exe" cr CMakeFiles\securec_shared.dir/objects.a @CMakeFiles\securec_shared.dir\objects1.rsp
-"D:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin\x86_64-w64-mingw32-gcc.exe" -g -shared -o libsecurec.dll -Wl,--out-implib,libsecurec.dll.a -Wl,--major-image-version,0,--minor-image-version,0 -Wl,--whole-archive CMakeFiles\securec_shared.dir/objects.a -Wl,--no-whole-archive @CMakeFiles\securec_shared.dir\linklibs.rsp

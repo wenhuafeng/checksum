@@ -3,6 +3,6 @@
 
 #include <stdint.h>
 
-void ChecksumOut(uint8_t *data, size_t len);
+void CHECKSUM_Out(uint8_t *data, size_t len);
 
 #endif
