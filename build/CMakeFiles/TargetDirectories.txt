@@ -1,5 +1,0 @@
-D:/src/checksum/build/CMakeFiles/edit_cache.dir
-D:/src/checksum/build/CMakeFiles/securec_static.dir
-D:/src/checksum/build/CMakeFiles/securec_shared.dir
-D:/src/checksum/build/CMakeFiles/checksum.dir
-D:/src/checksum/build/CMakeFiles/rebuild_cache.dir
