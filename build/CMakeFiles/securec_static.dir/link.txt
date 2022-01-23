@@ -1,0 +1,2 @@
+"D:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/ar.exe" qc libsecurec.a CMakeFiles/securec_static.dir/src/secure/memset_s.c.obj CMakeFiles/securec_static.dir/src/secure/securecutil.c.obj CMakeFiles/securec_static.dir/src/secure/secureprintoutput_a.c.obj CMakeFiles/securec_static.dir/src/secure/sprintf_s.c.obj CMakeFiles/securec_static.dir/src/secure/vsnprintf_s.c.obj CMakeFiles/securec_static.dir/src/secure/vsprintf_s.c.obj
+"D:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/ranlib.exe" libsecurec.a
