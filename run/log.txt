@@ -1,31 +1,31 @@
-[Time]2022-01-23 20:03:49 : Info:  [checksum] argc:3
-[Time]2022-01-23 20:03:49 : Info:  [checksum] argv[0]:D:\src\checksum\run\checksum.exe
-[Time]2022-01-23 20:03:49 : Info:  [checksum] argv[1]:WSA319.hex
-[Time]2022-01-23 20:03:49 : Info:  [checksum] argv[2]:ALL
-[Time]2022-01-23 20:03:49 : Info:  [checksum] v1.0.1 Jan 23 2022 20:03:34
-[Time]2022-01-23 20:03:49 : Info:  [checksum] fseek file: WSA319.hex fileSize: 90489
-[Time]2022-01-23 20:03:49 : Info:  [checksum] read file: WSA319.hex length: 90489
-[Time]2022-01-23 20:03:49 : Info:  [checksum] 
+[Time]2022-04-12 21:57:45 : Info:  [checksum] argc:3
+[Time]2022-04-12 21:57:45 : Info:  [checksum] argv[0]:D:\src\checksum\run\checksum.exe
+[Time]2022-04-12 21:57:45 : Info:  [checksum] argv[1]:WSA319.hex
+[Time]2022-04-12 21:57:45 : Info:  [checksum] argv[2]:ALL
+[Time]2022-04-12 21:57:45 : Info:  [checksum] v1.0.1 Apr 12 2022 21:57:35
+[Time]2022-04-12 21:57:45 : Info:  [checksum] fseek file: WSA319.hex fileSize: 90489
+[Time]2022-04-12 21:57:45 : Info:  [checksum] read file: WSA319.hex length: 90489
+[Time]2022-04-12 21:57:45 : Info:  [checksum] 
 -------------------------------------------------------------------------------
-[Time]2022-01-23 20:03:49 : Info:  [checksum] CHECKSUM_OUTPUT:
-[Time]2022-01-23 20:03:49 : Info:  [checksum] 2f939b74
-[Time]2022-01-23 20:03:49 : Info:  [checksum] 
+[Time]2022-04-12 21:57:45 : Info:  [checksum] CHECKSUM_OUTPUT:
+[Time]2022-04-12 21:57:45 : Info:  [checksum] 2f939b74
+[Time]2022-04-12 21:57:45 : Info:  [checksum] 
 -------------------------------------------------------------------------------
-[Time]2022-01-23 20:03:49 : Info:  [checksum] 
+[Time]2022-04-12 21:57:45 : Info:  [checksum] 
 -------------------------------------------------------------------------------
-[Time]2022-01-23 20:03:49 : Info:  [checksum] CRC16_CCITT_FALSE_OUTPUT:
-[Time]2022-01-23 20:03:49 : Info:  [checksum] e89a
-[Time]2022-01-23 20:03:49 : Info:  [checksum] 
+[Time]2022-04-12 21:57:45 : Info:  [checksum] CRC16_CCITT_FALSE_OUTPUT:
+[Time]2022-04-12 21:57:45 : Info:  [checksum] e89a
+[Time]2022-04-12 21:57:45 : Info:  [checksum] 
 -------------------------------------------------------------------------------
-[Time]2022-01-23 20:03:49 : Info:  [checksum] 
+[Time]2022-04-12 21:57:45 : Info:  [checksum] 
 -------------------------------------------------------------------------------
-[Time]2022-01-23 20:03:49 : Info:  [checksum] CRC32_OUTPUT:
-[Time]2022-01-23 20:03:49 : Info:  [checksum] 1f88cb5e
-[Time]2022-01-23 20:03:49 : Info:  [checksum] 
+[Time]2022-04-12 21:57:45 : Info:  [checksum] CRC32_OUTPUT:
+[Time]2022-04-12 21:57:45 : Info:  [checksum] 1f88cb5e
+[Time]2022-04-12 21:57:45 : Info:  [checksum] 
 -------------------------------------------------------------------------------
-[Time]2022-01-23 20:03:49 : Info:  [checksum] 
+[Time]2022-04-12 21:57:45 : Info:  [checksum] 
 -------------------------------------------------------------------------------
-[Time]2022-01-23 20:03:49 : Info:  [checksum] HASH256_OUTPUT:
-[Time]2022-01-23 20:03:49 : Info:  [checksum] d68b6879cd8c71a2f39ca13889d828c0f068ee272a3a7d070a3708f088c7f29b
-[Time]2022-01-23 20:03:49 : Info:  [checksum] 
+[Time]2022-04-12 21:57:45 : Info:  [checksum] HASH256_OUTPUT:
+[Time]2022-04-12 21:57:45 : Info:  [checksum] d68b6879cd8c71a2f39ca13889d828c0f068ee272a3a7d070a3708f088c7f29b
+[Time]2022-04-12 21:57:45 : Info:  [checksum] 
 -------------------------------------------------------------------------------
