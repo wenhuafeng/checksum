@@ -34,5 +34,4 @@ make clean
 make -j
 
 end=$(date +"%s.%N")
-
 timediff $start $end

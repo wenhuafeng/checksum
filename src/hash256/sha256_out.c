@@ -3,6 +3,8 @@
 #include "sha256.h"
 #include "log.h"
 
+#define LOG_TAG "sha256"
+
 #define SHA256_BYTE_LEN 32
 #define SHA256_ASCII_LEN 64
 #define DIGIT_LETTER_ASCII_OFFSET 0x30
@@ -11,12 +13,14 @@
 
 static char HexToChar(uint8_t hex)
 {
-    char desc;
+    char desc = 0;
 
-    if ((hex >= 0) && (hex <= 9)) {
+    if (hex <= 9) {
         desc = hex + DIGIT_LETTER_ASCII_OFFSET;
-    } else if ((hex >= 0xA) && (hex <= 0xF)) {
+    } else if ((hex >= 0x0A) && (hex <= 0x0F)) {
         desc = hex + SMALL_LETTER_ASCII_OFFSET;
+    } else {
+        ;
     }
 
     return desc;
@@ -37,14 +41,13 @@ static void HexToCharString(char *ascii, uint8_t *hex, uint8_t len)
 
 void SHA256_Out(uint8_t *data, size_t len)
 {
-    uint8_t i;
     uint8_t out[SHA256_BYTE_LEN] = { 0 };
     char charTable[SHA256_ASCII_LEN + 1] = { 0 }; /* string has an end character '\0' */
 
     CalcHash256Value(data, len, out);
-    LOGI("\n-------------------------------------------------------------------------------\n");
-    LOGI("HASH256_OUTPUT:\n");
+    LOGI(LOG_TAG, "\n--------------------------------------------------------------------------------------------------------------\n");
+    LOGI(LOG_TAG, "HASH256_OUTPUT:\n");
     HexToCharString(charTable, out, SHA256_BYTE_LEN);
-    LOGI("%s\n", charTable);
-    LOGI("\n-------------------------------------------------------------------------------\n");
+    LOGI(LOG_TAG, "%s\n", charTable);
+    LOGI(LOG_TAG, "\n--------------------------------------------------------------------------------------------------------------\n");
 }
