@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "cstdlib": "c",
-        "crc16_ccitt_false.h": "c"
+        "crc16_ccitt_false.h": "c",
+        "string.h": "c"
     }
 }

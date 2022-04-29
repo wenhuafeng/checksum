@@ -1,5 +1,4 @@
 #include <stdint.h>
-#include <stdio.h>
 #include "checksum_32.h"
 #include "log.h"
 

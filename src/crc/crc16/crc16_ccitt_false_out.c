@@ -1,5 +1,4 @@
 #include <stdint.h>
-#include <stdio.h>
 #include "crc16_ccitt_false.h"
 #include "log.h"
 

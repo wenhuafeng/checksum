@@ -1,5 +1,4 @@
 #include <stdint.h>
-#include <stdio.h>
 
 uint32_t MakeChecksum32(uint8_t *inData, size_t length)
 {

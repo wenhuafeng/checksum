@@ -1,5 +1,4 @@
 #include <stdint.h>
-#include <stdio.h>
 #include "sha256.h"
 #include "log.h"
 
