@@ -29,9 +29,9 @@ start=$(date +"%s.%N")
 
 mkdir build
 cd build
-cmake -G"Unix Makefiles" ../
+cmake -G"MinGW Makefiles" ../
 make clean
-make -j
+make -j8
 
 end=$(date +"%s.%N")
 timediff $start $end
