@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cp ../build/checksum.exe ../run
+#cp ../build/checksum.exe ../run
 
 ./checksum.exe WSA319.hex ALL
 #./checksum.exe WSA319.hex CRC16
