@@ -7,7 +7,6 @@
 #include <string.h>
 #include <stdarg.h>
 #include <time.h>
-#include "securec.h"
 
 #ifdef _WIN32
 #include <windows.h>
@@ -15,13 +14,13 @@
 #include <pthread.h>
 #endif
 
-#define MAX_LOG_NUM         31
-#define LOG_FILENAME_SIZE   128
-#define LOG_FILE_SIZE       1048576 /* 1M */
-#define LOF_FILE_NAME       "log.txt"
+#define MAX_LOG_NUM       31
+#define LOG_FILENAME_SIZE 128
+#define LOG_FILE_SIZE     1048576 /* 1M */
+#define LOF_FILE_NAME     "log.txt"
 
-#define LOG_BUF_LEN         (2048 - 1)
-#define PRINTF_BUFFER_LEN   2048
+#define LOG_BUF_LEN       (2048 - 1)
+#define PRINTF_BUFFER_LEN 2048
 
 #define TIMESTAMP_BASE_YEAR 1900
 
@@ -73,9 +72,8 @@ static void LogTime(char *buffer, size_t len)
     localtime_r(&curTime, &curData);
 #endif
 
-    ret = sprintf_s(buffer, len, "[Time]%d-%02d-%02d %02d:%02d:%02d : ",
-                    curData.tm_year + TIMESTAMP_BASE_YEAR, curData.tm_mon + 1,
-                    curData.tm_mday, curData.tm_hour, curData.tm_min, curData.tm_sec);
+    ret = sprintf_s(buffer, len, "[Time]%d-%02d-%02d %02d:%02d:%02d : ", curData.tm_year + TIMESTAMP_BASE_YEAR,
+                    curData.tm_mon + 1, curData.tm_mday, curData.tm_hour, curData.tm_min, curData.tm_sec);
     if (ret < 0) {
         printf("sprintf_s error!\n");
         return;
@@ -105,7 +103,7 @@ void LogOut(enum LogLevel level, const char *format, ...)
 {
     va_list args;
     size_t ret;
-    char *buffer = NULL;
+    char *buffer      = NULL;
     char *printBuffer = NULL;
 
     if ((g_logFile.fp == NULL) || (g_logFile.traceLevel < level)) {
@@ -123,8 +121,8 @@ void LogOut(enum LogLevel level, const char *format, ...)
         printf("log out malloc error!\n");
         goto error_quit;
     }
-    (void)memset_s(buffer, LOG_BUF_LEN, 0, LOG_BUF_LEN);
-    (void)memset_s(printBuffer, PRINTF_BUFFER_LEN, 0, PRINTF_BUFFER_LEN);
+    memset(buffer, 0, LOG_BUF_LEN);
+    memset(printBuffer, 0, PRINTF_BUFFER_LEN);
 
     LogLock();
     va_start(args, format);
@@ -166,13 +164,13 @@ bool LogInit(enum LogLevel level, int flag)
     struct tm curData;
     time_t curTime;
 
-    (void)memset_s(fileName, sizeof(fileName), 0, sizeof(fileName));
+    memset(fileName, 0, sizeof(fileName));
     if (flag == 0) {
         g_logFile.fileLength = 0;
         g_logFile.deleteFlag = 0;
         g_logFile.traceLevel = level;
-        g_logFile.fp = NULL;
-        (void)memset_s(g_logFile.fileName, sizeof(g_logFile.fileName), 0, sizeof(g_logFile.fileName));
+        g_logFile.fp         = NULL;
+        memset(g_logFile.fileName, 0, sizeof(g_logFile.fileName));
     }
 
     time(&curTime);

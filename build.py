@@ -3,6 +3,7 @@
 import os
 import datetime
 import shutil
+from shutil import copyfile
 
 BUILD_DIR = './build'
 
@@ -28,7 +29,17 @@ def build():
 
 def copy_exe_file():
     os.chdir('../')
-    os.system(COPY_OUT_FILE)
+    #os.system(COPY_OUT_FILE)
+    source = 'build/checksum.exe'
+    target = 'output/checksum.exe'
+
+    # adding exception handling
+    try:
+       copyfile(source, target)
+    except IOError as e:
+       print("Unable to copy file. %s" % e)
+    except:
+       print("Unexpected error:", sys.exc_info())
 
 def checksum_hex_file():
     # 切换目录到

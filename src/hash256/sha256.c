@@ -7,8 +7,8 @@
 
 #undef RND
 
-#define STATE_NUM       8
-#define SHA256_BLKSIZE  64
+#define STATE_NUM      8
+#define SHA256_BLKSIZE 64
 
 typedef struct {
     uint32_t state[STATE_NUM];
@@ -19,8 +19,8 @@ typedef struct {
 
 static void SHA256_Init(Sha256Type *ctx)
 {
-    ctx->offset = 0;
-    ctx->size = 0;
+    ctx->offset   = 0;
+    ctx->size     = 0;
     ctx->state[0] = 0x6a09e667ul;
     ctx->state[1] = 0xbb67ae85ul;
     ctx->state[2] = 0x3c6ef372ul;
@@ -213,7 +213,7 @@ static void SHA256_Final(Sha256Type *ctx, unsigned char *digest)
 
 bool CalcHash256Value(uint8_t *data, size_t len, uint8_t *outHash)
 {
-    Sha256Type tmp = {0};
+    Sha256Type tmp = { 0 };
 
     if (data == NULL || len == 0x00 || outHash == NULL) {
         return false;

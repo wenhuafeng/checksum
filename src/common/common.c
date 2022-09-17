@@ -61,7 +61,7 @@ static bool ReadFile(char *fileName, uint8_t **buffer, size_t *len)
         goto quit_program;
     }
 
-    *len = fileSize;
+    *len   = fileSize;
     status = EXIT_SUCCESS;
     LOGI(LOG_TAG, "read file: %s length: %ld\n", fileName, ret);
 
@@ -82,8 +82,8 @@ static void PrintFileCreateTime(char *fileName)
 
     stat(fileName, &sb);
     time = localtime(&sb.st_mtime);
-    sprintf(buf, "%04d-%02d-%02d %02d:%02d:%02d", time->tm_year+1900, time->tm_mon+1, time->tm_mday,
-            time->tm_hour, time->tm_min, time->tm_sec);
+    sprintf(buf, "%04d-%02d-%02d %02d:%02d:%02d", time->tm_year + 1900, time->tm_mon + 1, time->tm_mday, time->tm_hour,
+            time->tm_min, time->tm_sec);
     LOGI(LOG_TAG, "%s modify time: %s\n", fileName, buf);
 }
 
@@ -99,7 +99,7 @@ void CommonFunc(int argc, char *argv[])
     bool ret;
     uint8_t i;
     uint8_t tableLength;
-    size_t length = 0;
+    size_t length     = 0;
     uint8_t *fileData = NULL;
 
     PrintFileCreateTime(argv[1]);
