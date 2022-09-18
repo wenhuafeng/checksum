@@ -1,4 +1,6 @@
+#include "sha256_out.h"
 #include <stdint.h>
+#include <stdio.h>
 #include "sha256.h"
 #include "log.h"
 
@@ -44,9 +46,9 @@ void SHA256_Out(uint8_t *data, size_t len)
     char charTable[SHA256_ASCII_LEN + 1] = { 0 }; /* string has an end character '\0' */
 
     CalcHash256Value(data, len, out);
-    LOGI(LOG_TAG,"\n--------------------------------------------------------------------------------------------------------------\n");
+    printf("--------------------------------------------------------------------------------------------------------------\n");
     LOGI(LOG_TAG, "HASH256_OUTPUT:\n");
     HexToCharString(charTable, out, SHA256_BYTE_LEN);
     LOGI(LOG_TAG, "%s\n", charTable);
-    LOGI(LOG_TAG,"\n--------------------------------------------------------------------------------------------------------------\n");
+    printf("--------------------------------------------------------------------------------------------------------------\n");
 }

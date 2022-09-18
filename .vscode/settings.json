@@ -1,7 +1,9 @@
 {
     "files.associations": {
+        "*.c": "c",
         "cstdlib": "c",
         "crc16_ccitt_false.h": "c",
-        "string.h": "c"
+        "string.h": "c",
+        "crc16_ccitt_false_out.h": "c"
     }
 }
