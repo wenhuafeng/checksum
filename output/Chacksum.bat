@@ -1,1 +1,2 @@
-Chacksum WSA319.hex
+checksum.exe WSA319.hex ALL
+pause
