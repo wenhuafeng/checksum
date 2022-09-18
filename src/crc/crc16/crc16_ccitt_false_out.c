@@ -13,8 +13,5 @@ void CRC16_CcittFalseOut(uint8_t *data, size_t len)
     uint16_t crc16;
 
     crc16 = CRC16_CcittFalseCalculate(data, len, CRC16_CCITT_FALSE_INIT);
-    printf("--------------------------------------------------------------------------------------------------------------\n");
-    LOGI(LOG_TAG, "CRC16_CCITT_FALSE_OUTPUT:\n");
     LOGI(LOG_TAG, "%x\n", crc16);
-    printf("--------------------------------------------------------------------------------------------------------------\n");
 }

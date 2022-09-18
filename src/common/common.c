@@ -43,7 +43,7 @@ static bool ReadFile(char *fileName, uint8_t **buffer, size_t *len)
         goto quit_program;
     }
     fileSize = ftell(fp);
-    LOGI(LOG_TAG, "fseek file: %s fileSize: %ld\n", fileName, fileSize);
+    // LOGI(LOG_TAG, "fseek file: %s fileSize: %ld\n", fileName, fileSize);
 
     *buffer = (char *)malloc(fileSize);
     if (*buffer == NULL) {
@@ -63,7 +63,7 @@ static bool ReadFile(char *fileName, uint8_t **buffer, size_t *len)
 
     *len   = fileSize;
     status = EXIT_SUCCESS;
-    LOGI(LOG_TAG, "read file: %s length: %ld\n", fileName, ret);
+    LOGI(LOG_TAG, "%s file size: %ld\n", fileName, ret);
 
 quit_program:
     if (fp != NULL) {

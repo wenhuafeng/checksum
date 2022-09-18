@@ -42,13 +42,10 @@ static void HexToCharString(char *ascii, uint8_t *hex, uint8_t len)
 
 void SHA256_Out(uint8_t *data, size_t len)
 {
-    uint8_t out[SHA256_BYTE_LEN]         = { 0 };
-    char charTable[SHA256_ASCII_LEN + 1] = { 0 }; /* string has an end character '\0' */
+    uint8_t out[SHA256_BYTE_LEN]         = {0};
+    char charTable[SHA256_ASCII_LEN + 1] = {0}; /* string has an end character '\0' */
 
     CalcHash256Value(data, len, out);
-    printf("--------------------------------------------------------------------------------------------------------------\n");
-    LOGI(LOG_TAG, "HASH256_OUTPUT:\n");
     HexToCharString(charTable, out, SHA256_BYTE_LEN);
     LOGI(LOG_TAG, "%s\n", charTable);
-    printf("--------------------------------------------------------------------------------------------------------------\n");
 }
