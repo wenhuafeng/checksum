@@ -13,7 +13,7 @@
 
 void PrintVersionInfo(void)
 {
-    LOGI(LOG_TAG, "software version and build time: %s %s %s\n", SOFTWARE_VERSION, __DATE__, __TIME__);
+    LOGI(LOG_TAG, "version: %s %s %s\n", SOFTWARE_VERSION, __DATE__, __TIME__);
 }
 
 int main(int argc, char *argv[])
@@ -26,10 +26,10 @@ int main(int argc, char *argv[])
         printf("log init error!\n");
     }
 
-    LOGI(LOG_TAG, "argc:%d\n", argc);
-    for (i = 0; i < argc; i++) {
-        LOGI(LOG_TAG, "argv[%d]:%s\n", i, argv[i]);
-    }
+    // LOGI(LOG_TAG, "argc:%d\n", argc);
+    // for (i = 0; i < argc; i++) {
+    //     LOGI(LOG_TAG, "argv[%d]:%s\n", i, argv[i]);
+    // }
 
     PrintVersionInfo();
     CommonFunc(argc, argv);

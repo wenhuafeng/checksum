@@ -192,7 +192,7 @@ bool LogInit(enum LogLevel level, int flag)
         return EXIT_FAILURE;
     }
     g_logFile.fileLength++;
-    printf("fopen log file succeed\n");
+    // printf("fopen log file succeed\n");
 
     return EXIT_SUCCESS;
 }
@@ -210,7 +210,7 @@ void LogDeInit(void)
         if (fclose(g_logFile.fp) == EOF) {
             printf("close log file fail\n");
         } else {
-            printf("close log file succeed\n");
+            // printf("close log file succeed\n");
         }
         g_logFile.fp = NULL;
     }
