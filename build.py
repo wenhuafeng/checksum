@@ -44,7 +44,7 @@ def copy_exe_file():
 def checksum_hex_file():
     # 切换目录到
     os.chdir('./output')
-    os.system('checksum.exe WSA319.hex ALL')
+    os.system('checksum.exe WSA319.hex CRC32 SHA256')
 
 def main():
     start = datetime.datetime.now()

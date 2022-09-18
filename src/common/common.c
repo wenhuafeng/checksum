@@ -14,6 +14,8 @@
 
 #define LOG_TAG "common"
 
+#define PARA_LEN_MIN 3
+
 typedef void (*CmdHandler)(uint8_t *data, size_t len);
 typedef struct {
     char *cmd;
@@ -97,10 +99,14 @@ static const CmdHandlerType g_cmdTable[] = {
 void CommonFunc(int argc, char *argv[])
 {
     bool ret;
-    uint8_t i;
+    uint8_t i, n;
     uint8_t tableLength;
     size_t length     = 0;
     uint8_t *fileData = NULL;
+
+    if (argc < PARA_LEN_MIN) {
+        return;
+    }
 
     PrintFileCreateTime(argv[1]);
     ret = ReadFile(argv[1], &fileData, &length);
@@ -111,13 +117,16 @@ void CommonFunc(int argc, char *argv[])
     }
 
     tableLength = sizeof(g_cmdTable) / sizeof(g_cmdTable[0]);
-    if (strcmp("ALL", argv[2]) == 0) {
+    if (strcmp("ALL", argv[PARA_LEN_MIN - 1]) == 0) {
         for (i = 0; i < tableLength; i++) {
             g_cmdTable[i].handler(fileData, length);
         }
-    } else {
+        return;
+    }
+
+    for (n = 0x00; n < (argc - PARA_LEN_MIN + 1); n++) {
         for (i = 0; i < tableLength; i++) {
-            if (strcmp(g_cmdTable[i].cmd, argv[2]) == 0) {
+            if (strcmp(g_cmdTable[i].cmd, argv[n + PARA_LEN_MIN - 1]) == 0) {
                 g_cmdTable[i].handler(fileData, length);
                 break;
             }

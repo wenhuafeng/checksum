@@ -4,7 +4,7 @@
 #include "log.h"
 #include "common.h"
 
-#define SOFTWARE_VERSION        "v1.0.1"
+#define SOFTWARE_VERSION        "v1.0.2"
 #define SOFTWARE_VERSION_LEN    (sizeof(__DATE__) + \
                                  sizeof(__TIME__) + \
                                  sizeof(SOFTWARE_VERSION) + 1)
@@ -26,10 +26,10 @@ int main(int argc, char *argv[])
         printf("log init error!\n");
     }
 
-    // LOGI(LOG_TAG, "argc:%d\n", argc);
-    // for (i = 0; i < argc; i++) {
-    //     LOGI(LOG_TAG, "argv[%d]:%s\n", i, argv[i]);
-    // }
+   // LOGI(LOG_TAG, "argc:%d\n", argc);
+   // for (i = 0; i < argc; i++) {
+   //     LOGI(LOG_TAG, "argv[%d]:%s\n", i, argv[i]);
+   // }
 
     PrintVersionInfo();
     CommonFunc(argc, argv);
