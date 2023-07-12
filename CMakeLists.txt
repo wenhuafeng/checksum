@@ -1,9 +1,12 @@
-cmake_minimum_required(VERSION 3.0.0)
+cmake_minimum_required(VERSION 3.10)
 
 project(checksum)
 
 set(PROJECT_VERSION 1.0.2)
 set(CMAKE_BUILD_TYPE Release)
+set(CMAKE_MAKE_PROGRAM "make.exe")
+set(CMAKE_C_COMPILER "gcc.exe")
+set(CMAKE_CXX_COMPILER "g++.exe")
 
 include_directories(src/checksum)
 include_directories(src/common)

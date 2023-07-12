@@ -1,5 +1,5 @@
-[Time]2022-09-18 13:11:19 : Info:  [main] version: v1.0.2 Sep 18 2022 13:11:18
-[Time]2022-09-18 13:11:19 : Info:  [common] WSA319.hex modify time: 2021-12-01 22:24:00
-[Time]2022-09-18 13:11:19 : Info:  [common] WSA319.hex file size: 90489
-[Time]2022-09-18 13:11:19 : Info:  [crc32] 1f88cb5e
-[Time]2022-09-18 13:11:19 : Info:  [sha256] d68b6879cd8c71a2f39ca13889d828c0f068ee272a3a7d070a3708f088c7f29b
+[Time]2023-07-12 20:43:50 : Info:  [main] version: v1.0.2 Jul 12 2023 20:43:48
+[Time]2023-07-12 20:43:50 : Info:  [common] WSA319.hex modify time: 2023-07-10 14:13:37
+[Time]2023-07-12 20:43:50 : Info:  [common] WSA319.hex file size: 90489
+[Time]2023-07-12 20:43:50 : Info:  [crc32] 1f88cb5e
+[Time]2023-07-12 20:43:50 : Info:  [sha256] d68b6879cd8c71a2f39ca13889d828c0f068ee272a3a7d070a3708f088c7f29b

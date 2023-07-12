@@ -1,61 +1,48 @@
 #!/usr/bin/python
 
 import os
-import datetime
+import subprocess
 import shutil
-from shutil import copyfile
+from pathlib import Path
+import logging
+import time
 
-BUILD_DIR = './build'
-
-MKDIR_BUILD_DIR = 'mkdir build'
-CMAKE_COMMAND   = 'cmake -G"MinGW Makefiles" ../'
-MAKE_CLEAN      = 'make clean'
-MAKE            = 'make -j8'
-
-COPY_OUT_FILE = 'copy ./build/checksum.exe ./output'
+BUILD_DIR = Path('./build')
 
 def rm_build():
-    # 删除build文件夹
-    if os.path.exists(BUILD_DIR):
+    if BUILD_DIR.exists():
         shutil.rmtree(BUILD_DIR)
 
 def build():
-    # 编译项目
-    os.system(MKDIR_BUILD_DIR)
-    os.chdir(BUILD_DIR)
-    os.system(CMAKE_COMMAND)
-    os.system(MAKE_CLEAN)
-    os.system(MAKE)
+    BUILD_DIR.mkdir(parents=True, exist_ok=True)
+    subprocess.run(['cmake', '-G', 'Unix Makefiles', '..'], cwd=BUILD_DIR)
+    subprocess.run(['make', 'clean'], cwd=BUILD_DIR)
+    subprocess.run(['make', '-j8'], cwd=BUILD_DIR)
 
 def copy_exe_file():
-    os.chdir('../')
-    #os.system(COPY_OUT_FILE)
-    source = 'build/checksum.exe'
-    target = 'output/checksum.exe'
+    source = BUILD_DIR / 'checksum.exe'
+    target = Path('output/checksum.exe')
+    target.parent.mkdir(parents=True, exist_ok=True)
 
-    # adding exception handling
     try:
-       copyfile(source, target)
-    except IOError as e:
-       print("Unable to copy file. %s" % e)
-    except:
-       print("Unexpected error:", sys.exc_info())
+       shutil.copyfile(source, target)
+    except Exception as e:
+       logging.error("Unable to copy file. %s", e)
 
 def checksum_hex_file():
-    # 切换目录到
-    os.chdir('./output')
-    os.system('checksum.exe WSA319.hex CRC32 SHA256')
+    subprocess.run(['output/checksum.exe', 'WSA319.hex', 'CRC32', 'SHA256'], cwd=Path('./output'))
 
 def main():
-    start = datetime.datetime.now()
+    start = time.perf_counter()
 
     rm_build()
     build()
     copy_exe_file()
     checksum_hex_file()
 
-    end = datetime.datetime.now()
-    print('run time: %s second' %(end - start))
+    end = time.perf_counter()
+    logging.info('run time: %s second', end - start)
 
 if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO)
     main()
