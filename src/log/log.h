@@ -27,11 +27,11 @@ void LogOut(enum LogLevel level, const char *format, ...);
     } while (0)
 #define LOGW(tag, format, ...)                                                \
     do {                                                                      \
-        LogOut(LOG_LEVEL_WARN, "Warn:  [" tag "] " format "", ##__VA_ARGS__); \
+        LogOut(LOG_LEVEL_WARN, "Warn: [" tag "] " format "", ##__VA_ARGS__); \
     } while (0)
 #define LOGI(tag, format, ...)                                                \
     do {                                                                      \
-        LogOut(LOG_LEVEL_INFO, "Info:  [" tag "] " format "", ##__VA_ARGS__); \
+        LogOut(LOG_LEVEL_INFO, "Info: [" tag "] " format "", ##__VA_ARGS__); \
     } while (0)
 #define LOGD(tag, format, ...)                                                 \
     do {                                                                       \
